@@ -1,7 +1,7 @@
 0.92.20230326
 -------------
 
-* fixed https://github.com/richardkiss/pycoin/issues/361
+* fixed <https://github.com/richardkiss/pycoin/issues/361>
 
 0.92.20220529
 -------------
@@ -80,8 +80,8 @@ Version 0.77
 * tx cmd will no longer use split pools unless an output is manually specified
 * more refactoring of vm classes
 * first crack at Sphinx documentation
-* fix https://github.com/richardkiss/pycoin/issues/224
-* fix https://github.com/richardkiss/pycoin/issues/225
+* fix <https://github.com/richardkiss/pycoin/issues/224>
+* fix <https://github.com/richardkiss/pycoin/issues/225>
 * fixed recipes
 
 Version 0.76
@@ -139,7 +139,7 @@ Version 0.60
 * abolish support for negative numbers in BIP32 key paths
 * more networks
 * changed how Spendable streams to text and to dicts to put transaction hashes in the
-  more conventional order. ** WARNING **: if you have built databases of Spendable objects
+  more conventional order. **WARNING**: if you have built databases of Spendable objects
   using these methods, you will need to convert them
 * make spend.py script obsolete
 * first crack at Insight service, chain.so service, chain.com service
@@ -158,7 +158,6 @@ Version 0.51
 
 * add pycoin.blockchain (which was in github but not setup.py)
 
-
 Version 0.50
 ------------
 
@@ -173,14 +172,12 @@ Version 0.50
 * pay-to-script validation now supported
 * pay-to-script signing now supported
 
-
 Version 0.42
 ------------
 
 * switch TxOut.bitcoin_address to taking netcode, sorry for API thrash
 * get pay-to-script addresses recognized in existing transactions
   * still can't create or sign them
-
 
 Version 0.41
 ------------
@@ -193,7 +190,6 @@ Version 0.41
 * get block script working
 * fix a few other bugs
 
-
 Version 0.40
 ------------
 
@@ -203,6 +199,7 @@ This is a pretty major overhaul... sorry for broken API!
 * initial support for Litecoin and Dogecoin addresses
 
 New Scripts:
+
 * ku (keys & BIP32 manipulation), replaces bu/bitcoin_utils and genwallet
 * tx (transaction manipulation), replaces spend
 * fetch_unspent command-line tool
@@ -210,10 +207,12 @@ New Scripts:
 * block (to dump contents of a block)
 
 Keys:
+
 * added Key class with alt coin support
 * renamed Wallet.py to bip32.py
 
 Tx:
+
 * massive overhaul of Tx class
 * remove UnsignedTx class, folding functionality into Tx
 * partial signing supported by Tx
@@ -227,15 +226,15 @@ Tx:
   * create_tx and create_signed_tx
 
 Services:
+
 * new support for blockr.io and biteasy.com
 * services now integrated with environment variables:
-   * PYCOIN_SERVICE_PROVIDERS
-   * PYCOIN_CACHE_DIR
+  * PYCOIN_SERVICE_PROVIDERS
+  * PYCOIN_CACHE_DIR
 * a new TxDB class
-   * looks like a dictionary
-   * transparently uses configured services
-   * caches fetched transactions
-
+  * looks like a dictionary
+  * transparently uses configured services
+  * caches fetched transactions
 
 Version 0.26
 ------------

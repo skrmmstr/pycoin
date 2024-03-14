@@ -4,5 +4,5 @@ $ pip install pytest
 
 To run just a subset of tests for features under development do something like:
 
-$ cd (project_root_dir)
-$ PYTHONPATH=`pwd` py.test tests/scripts_test.py
+$ ycd (project_root_dir)
+$ PYTHONPATH=`pwd` py.test tests/scripts_test.p
